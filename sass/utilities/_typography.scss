@@ -1,0 +1,120 @@
+// Typographic Rules
+
+
+    // Font Face Rules For Din
+    @font-face {
+        font-family: 'Din';
+        src: url("/fonts/DINWeb.eot");
+    }
+
+    @font-face {
+        font-family: 'Din';
+        src: url("/fonts/DINWeb.woff");
+    }
+
+    body { 
+        font-family: $basefont; 
+        font-size: $basesize;
+        color: $copycolor; 
+        font-style: normal;
+        line-height: 1.3em;
+    }
+
+    h1,h2,h3,h4,h5,h6 { 
+        line-height: 1em;
+        font-family: $basefont; 
+    }
+
+    h1, .h1 { font-size: 2em; }
+    h2, .h2 { font-size: 1.5em; }
+    h3, .h3 { font-size: 1.2em; }
+    h4, .h4 { font-size: 1em; }
+    h5, .h5 { font-size: .83em; }
+    h6, .h6 { font-size: .75em; }
+    
+    p {
+        font-family: $secondaryfont;
+        font-style: normal;
+        line-height: 1.3em;
+
+        &.minimalMargin { margin: 0.3125em 0; }
+    }
+
+
+    blockquote {
+        font-family: $accentfont;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        line-height: 1.12em;
+        margin: 1em 0.625em;
+
+        &.status {
+            margin: 0;
+            font-style: normal;
+            line-height: 1em;
+            &:before { content: ''; }
+            &:after { content: ''; }
+        }
+    }
+
+    // Smalls and captions
+    small, figcaption, caption, legend, .small { 
+        font-size: 0.75em; 
+        line-height: 1.3em;
+    }
+
+    // Strongs and Bolds 
+    strong, b, .bold { font-weight: bold; }
+
+    // Italics
+    em { font-style: italic; }
+
+    // Footnote
+    .footnote {
+        display: block;
+        margin-bottom: 1.4rem;
+        line-height: 2em;
+        color: $gray;
+    }
+
+    // Microcopy
+    .microcopy {
+        font-size: 0.625em;
+    }
+
+    // Section Head
+    .sectionheading {
+        border: 3px solid $darkgray;
+        padding: 0.5em;
+        display: inline-block;
+        font-size: 2em;
+
+        &.white {
+            border-color: $white;
+            color: $white;
+        }
+    }
+
+    // Alignment
+    .center {
+        text-align: center;
+    }
+
+    // Page Title
+    .pagetitle {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+
+    // Weights
+    .normalweight { font-weight: 400; }
+    .lightweight { font-weight: 300; }
+
+    // Uppercase
+    .uppercase { text-transform: uppercase; }
+
+    // Address
+    address { 
+        display: inline; 
+        font-style: normal;
+    }

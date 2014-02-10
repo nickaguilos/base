@@ -1,0 +1,117 @@
+// Forms. 
+form {
+    input, textarea, select {
+        width: 100%;
+        border: 1px solid $ash;
+        padding: 0.5em;
+        font-size: 15px;
+        line-height: 1.2em;
+        background: #fff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+        -webkit-appearance: none;
+        @include border-radius(2px);
+
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+
+    // Radios and Checkboxes
+    input[type=checkbox],
+    input[type=radio] {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 1em;
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: 1.25em;
+        height: 1.25em;
+        -webkit-border-radius: 0.25em;
+        vertical-align: text-top;
+    }
+
+    input[type=checkbox]{
+        vertical-align: middle;
+        &:checked {
+            background: url("/images/icons/png/check.png") center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    input[type=radio] {
+        -webkit-border-radius: 2em; /* Make radios round */
+
+        // Checked state
+        &:checked {
+            background: url("/images/icons/png/circle.png") center center no-repeat;
+            background-size: 80%;
+        }
+    }
+
+    input[type="text"], input[type="search"], input[type="email"], input[type="tel"], textarea, select {
+        margin-bottom: 1em;
+        background: $white;
+    }
+
+    // Selects 
+    select {
+        background:
+            url("/images/icons/png/arrowdown.svg") 98% center no-repeat,
+            -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); //Multiple backgrounds
+        background-size: 15px 15px, cover;
+    }
+
+    // Textarea
+    textarea {
+        min-height: 5em;
+    }
+
+    // Fieldset
+    fieldset {
+        padding: 0;
+        margin: 0 0 1.5em 0;
+        border: 0;
+
+        *:last-child { margin: 0; }
+    }
+
+    // Legend and Label
+    legend, label { 
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $platinum;
+        font-weight: bold;
+        color: $ash;
+        padding-bottom: 0.625em;
+        margin-bottom: 0.625em;
+    }
+
+    label {
+        line-height: 1em;
+        font-size: 0.75em;
+        color: $gray;
+
+        &.inline {
+            display: inline;
+            border: none;
+        }
+    }
+
+    // Error State
+    .error {
+        border: 1px solid #bd4e44;
+    }
+}
+
+// Required
+.required:after, .requiredMark {
+    content: "\e603";
+    font-family: pat;
+    font-size: 0.6875em;
+    color: $red;
+    margin-left: 3px;
+}
+
+.requiredMark {
+    margin: 0;
+}

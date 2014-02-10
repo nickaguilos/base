@@ -1,0 +1,22 @@
+// Xlarge.
+$headerheight: 98px;
+
+#siteHead {
+	height: $headerheight;
+	padding: 0 1em;
+
+	#items {
+		text-align: right;
+	}
+}
+
+#siteBody {
+	margin-top: $headerheight;
+	& > section {
+		padding: 3em 2em;
+	}
+	
+	#hero {
+
+	}
+}
