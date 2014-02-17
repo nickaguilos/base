@@ -21,6 +21,7 @@ Breakdown:
     - Pads and Margins
     - Positions
     - Shapes
+    - Border Radius
 */
 
 // Anchors
@@ -115,7 +116,6 @@ Breakdown:
     &.zebra {
       tr:nth-child(odd) {
         border: none;
-        background-color: $steelblue;
       }
       tr:last-child {
         border: none;
@@ -274,23 +274,16 @@ Breakdown:
   }
 
   // Pads & Margins
-  .pad {
-    padding: 10px;
-  }
+  .pad { padding: 10px; }
+  .pad5 { padding: 5px; }
+  .padRight { padding-right: 15px; }
+  .padBottom { padding-bottom: 10px; }
+  .padBottom15 { padding-bottom: 15px; }
 
-  .pad5 {
-    padding: 5px;
-  }
-
-  .padBottom {
-    padding-bottom: 10px;
-  }
-
-  .padBottom15 {
-    padding-bottom: 15px;
-  }
-
+  .margin { margin: 10px; }
   .marginRight { margin-right: 10px; }
+  .marginBottom { margin-bottom: 10px; }
+  .marginBottom15 { margin-bottom: 15px; }
 
   // Positions
   .stickToBottom {
@@ -306,4 +299,15 @@ Breakdown:
   // Shapes
   .circle {
     @include border-radius(100px);
+  }
+
+  // Border Radius
+  @mixin borderradius(){
+    @if $setborderradius == "true" {
+      @include border-radius($radii);
+    }
+
+    @else {
+      @include border-radius(0);
+    }
   }

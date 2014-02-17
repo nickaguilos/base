@@ -4,4 +4,8 @@
 @import 'utilities';
 @import 'sections';
 @import 'pages';
-@import 'mediaquery';
+@import 'mediaqueries';
+
+div {
+	@include borderradius();
+}

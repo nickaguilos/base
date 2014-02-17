@@ -4,7 +4,7 @@ button, .button {
         @include border-radius(2px);
         width: auto; 
         margin: 0; padding: 0.785em 1.42em 0.785em; 
-        background: $darkgray; 
+        background: $brand; 
         border: none;
         color: $white !important; 
         cursor: pointer; 

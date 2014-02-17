@@ -2,22 +2,22 @@
 
 // XLarge - Really Huge Desktops
 @media screen and (min-width: 1001px){
-	@import 'mediaquery/xlarge';
+	@import 'mediaqueries/xlarge';
 }
 
 // Large - Desktops
 @media screen and (min-width: 901px) and (max-width: $xlarge) {
-	@import 'mediaquery/large';
+	@import 'mediaqueries/large';
 }
 
 // Medium - Tablets to medium sized screen
 @media screen and (max-width: $medium) {
-	@import 'mediaquery/medium';
+	@import 'mediaqueries/medium';
 }
 
 
 // Small - Phones and smaller screens
 @media screen and (max-width: $small) {
-	@import 'mediaquery/small'
+	@import 'mediaqueries/small'
 }
 

@@ -1,17 +1,5 @@
 // Typographic Rules
 
-
-    // Font Face Rules For Din
-    @font-face {
-        font-family: 'Din';
-        src: url("/fonts/DINWeb.eot");
-    }
-
-    @font-face {
-        font-family: 'Din';
-        src: url("/fonts/DINWeb.woff");
-    }
-
     body { 
         font-family: $basefont; 
         font-size: $basesize;

@@ -1,4 +1,4 @@
-// Forms. 
+// Forms
 form {
     input, textarea, select {
         width: 100%;
@@ -33,7 +33,7 @@ form {
     input[type=checkbox]{
         vertical-align: middle;
         &:checked {
-            background: url("/images/icons/png/check.png") center center no-repeat;
+            background: url("/images/icons/check.png") center center no-repeat;
             background-size: cover;
         }
     }
@@ -43,7 +43,7 @@ form {
 
         // Checked state
         &:checked {
-            background: url("/images/icons/png/circle.png") center center no-repeat;
+            background: url("/images/icons/circle.png") center center no-repeat;
             background-size: 80%;
         }
     }
