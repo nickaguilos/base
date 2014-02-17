@@ -18,7 +18,7 @@
     h3, .h3 { font-size: 1.2em; }
     h4, .h4 { font-size: 1em; }
     h5, .h5 { font-size: .83em; }
-    h6, .h6 { font-size: .75em; }
+    h6, .h6 { font-size: .65em; }
     
     p {
         font-family: $secondaryfont;
@@ -55,7 +55,7 @@
     strong, b, .bold { font-weight: bold; }
 
     // Italics
-    em { font-style: italic; }
+    em, .italic { font-style: italic; }
 
     // Footnote
     .footnote {
@@ -95,8 +95,8 @@
     }
 
     // Weights
-    .normalweight { font-weight: 400; }
-    .lightweight { font-weight: 300; }
+    .normal { font-weight: 400; }
+    .light { font-weight: 200; }
 
     // Uppercase
     .uppercase { text-transform: uppercase; }

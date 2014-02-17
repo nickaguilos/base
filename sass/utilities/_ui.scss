@@ -63,7 +63,7 @@ Breakdown:
 
       &.narrow {
         width: 8em;
-        background: $darkgray;
+        background: $border;
       }
 
       &.center {
@@ -125,11 +125,13 @@ Breakdown:
 
 // Lists 
   ul, ol {
-    &.noPad { padding-left: 0; }
+    &.nopad { padding-left: 0; }
 
-    &.facts {
+    &.nostyle {
       list-style-type: none;
+    }
 
+    &.bordered {
       li { border-bottom: 1px solid $grayhighlight; }
     }
   }

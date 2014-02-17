@@ -4,22 +4,96 @@
 	<meta charset="UTF-8">
 	<title>Base SCSS</title>
 	<link rel="stylesheet" href="/stylesheets/base.css">
-
-	<style>
-		div {
-			height: 200px;
-			width: 200px;
-			background: red;
-		}
-	</style>
 </head>
-<body>
-	<h1>Base SCSS</h1>
+<body class="container" id="siteBody">
+	<header>
+		<h1>Base SCSS</h1>
+		<p>
+			Base is my collection of SASS modules to quickly get me up and running with projects.
+		</p>
+	</header>
 
-	<div>
-		
-	</div>
+	<hr class="narrow">
 
-	<a href="" class="button">Test</a>
+	<section id="typography">
+		<h2>Typography</h2>
+		<hr>
+
+		<div class="row gutters">
+			<div class="col span_4">
+				<h3>Headings</h3>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+			</div>
+
+			<div class="col span_4">
+				<h3>Paragraphs</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nesciunt, error, doloremque, veritatis ex ipsa nisi aspernatur blanditiis consequatur dolor commodi a quia necessitatibus pariatur quisquam repellat cum saepe veniam adipisci quibusdam atque maiores laboriosam distinctio debitis fuga. Omnis perferendis dicta natus labore alias quo quos! Esse, nulla quo explicabo.</p>
+			</div>
+
+			<div class="col span_4">
+				<h3>Blockquotes / Pullquotes</h3>
+				<blockquote>Hey! I am a blockquote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, sed!</blockquote>
+			</div>
+		</div>
+
+		<div class="row gutters">
+			<div class="col span_4">
+				<h3>List</h3>
+				<ul>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+			</div>
+
+			<div class="col span_4">
+				<h3>List with no indentation</h3>
+				<ul class="nopad nostyle">
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+			</div>
+
+			<div class="col span_4">
+				<h3>Weight Classes</h3>
+				<span class="bold">Bold</span>
+				<span class="normal">Normal</span>
+				<span class="light">Light</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="buttons">
+		<h2>Buttons</h2>
+		<hr>
+		<div class="row gutters">
+			<div class="buttonstack col span_4">
+				<a href="" class="button">Default Button</a> <br>
+				<a href="" class="button large">Big Button</a> <br>
+				<a href="" class="button medium">Medium Button</a> <br>
+				<a href="" class="button small">Small Button</a>
+			</div>
+
+			<div class="buttonstack col span_4">
+				<a href="" class="button expand green">Green</a> <br>
+				<a href="" class="button expand red">Red</a> <br> 
+				<a href="" class="button expand clear">Clear</a> <br>
+				<a href="" class="button expand gray">Gray</a> <br>
+				<a href="" class="button expand disabled">Disabled</a> <br>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

@@ -11,15 +11,15 @@ $small: 670px;
 $siteMaxWidth: $xlarge;
 
 // Typography Variables
-$basesize: 16px;
+$basesize: 18px;
 $basefont:  sans-serif;
 $secondaryfont: $basefont;
-$accentfont: monospace;
+$accentfont: $basefont;
+$monospacefont: monospace;
 
 // Radius
 $radii: 3px; // Set base radius for UI elements
 $setborderradius: "false";
-
 
 // Header Height
 $stickyheadheight: 6.125em; // Change this to reflect height of your sticky header
@@ -51,20 +51,20 @@ $stickyheadheight: 6.125em; // Change this to reflect height of your sticky head
 	$darkgray: #222;
 	$black: #111;
 
-	// Brand
-	$brand: #b2c61e;
-
 	// Other Brand Colors
 	$facebookblue: #4761A2;
 	$twitterblue: #1F9BD3;
 	$googlegray: $gray;
 	$googleplusred: #D34836;
 	$youtubered: #DC2B1B;
-	$cMagazinered: #DC2B1B;
 	$pinterestred: #CB2027;
 
+	// Brand
+	$brand: $rust;
+	$brandhighlight: $brand - 20;
+
 	// Border Colors
-	$border: $lightgray;
+	$border: $gray;
 
 	// Link Color
 	$linkcolor: $darkgray;
@@ -73,3 +73,6 @@ $stickyheadheight: 6.125em; // Change this to reflect height of your sticky head
 	$copycolor: $darkgray;
 
 	
+// Card
+$cardbg: #fff; // Set Card background
+$cardborder: $border;

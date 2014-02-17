@@ -1,7 +1,7 @@
 // Buttons
 
 button, .button {   
-        @include border-radius(2px);
+        @include borderradius();
         width: auto; 
         margin: 0; padding: 0.785em 1.42em 0.785em; 
         background: $brand; 
@@ -12,6 +12,11 @@ button, .button {
         font: bold 1rem $basefont;
         text-align: center; 
         text-decoration: none; 
+
+        &:hover, &:focus {
+            text-decoration: none;
+            background-color: $brandhighlight;
+        }
 
         // Sizes
         &.xlarge { font-size: 20px; padding: 17px 26px; }
@@ -60,9 +65,9 @@ button, .button {
 
         &.clear {
             background-color: transparent;
-            border: 1px solid #80878F;
+            border: 1px solid $border;
             color: $copycolor !important;
-            &:hover, &:focus { border-color: #80878F; }
+            &:hover, &:focus { border-color: $border + 20; }
         }        
 
         &.red {
@@ -84,19 +89,22 @@ button, .button {
 
     .disabled {
         cursor: default;
-        background: $lightgray;
-        color: $white;
+        background: $platinum;
+        color: $ash !important;
 
-        &:active { box-shadow: none; }
+        &:hover, &:focus { 
+            background: $platinum !important;
+            box-shadow: none; 
+        }
     }
 
     // Button Group
-    .buttonGroup {
+    .buttongroup {
         width: auto;
         overflow: hidden;
         margin-bottom: 1em;
         a {
-            @include border-radius(0);
+            @include borderradius();
             display: block;
             float: left;
             width: 33.3%;
@@ -104,25 +112,25 @@ button, .button {
             text-align: center;
             font-size: 0.750em;
             font-weight: bold;
-            color: #80878F;
-            border: 1px solid #80878F;
+            color: $copycolor;;
+            border: 1px solid $border;
 
             &.active {
-                background-color: #80878F;
+                background-color: $brandhighlight;
                 color: $white;
             }
 
-            &:first-of-type {
-                @include border-top-left-radius(2px);
-                @include border-bottom-left-radius(2px);
-                border-right: none;
-            }
+            // &:first-of-type {
+            //     @include border-top-left-radius(2px);
+            //     @include border-bottom-left-radius(2px);
+            //     border-right: none;
+            // }
 
-            &:last-child {
-                @include border-top-right-radius(2px);
-                @include border-bottom-right-radius(2px);
-                border-left: none;
-            }
+            // &:last-child {
+            //     @include border-top-right-radius(2px);
+            //     @include border-bottom-right-radius(2px);
+            //     border-left: none;
+            // }
         }
 
         &.two {
@@ -133,14 +141,14 @@ button, .button {
     }
 
     // Stacked Buttons
-    .stackedButtons {
+    .buttonstack {
         .button, button {
             margin-bottom: 0.5em;
         }
     }
 
     // Sticky CTA
-    .stickyCallToAction {
+    .stickycta {
         background-color: $white;
         margin-left: -10px;
         padding: 10px;

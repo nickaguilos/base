@@ -5,7 +5,3 @@
 @import 'sections';
 @import 'pages';
 @import 'mediaqueries';
-
-div {
-	@include borderradius();
-}
