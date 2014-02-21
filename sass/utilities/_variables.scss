@@ -71,7 +71,15 @@ $stickyheadheight: 6.125em; // Change this to reflect height of your sticky head
 
 	// Copy Color
 	$copycolor: $darkgray;
+	
+	// Body Background
+	$bodybackground: #fff; //#e7e7e2;
 
+// Box Shadow
+$default-box-shadow-color: $platinum;
+$default-box-shadow-h-offset: 0px;
+$default-box-shadow-v-offset: 2px;
+$default-box-shadow-blur: 3px;
 	
 // Card
 $cardbg: #fff; // Set Card background

@@ -211,7 +211,7 @@ Breakdown:
   } 
 
   // Visibility
-  .displayNone {
+  .hidden {
     display: none;
   }
 
@@ -231,20 +231,15 @@ Breakdown:
     &.modal {
       position: absolute;
     }
-
-    .card {
-      // margin-top: 60px;
-      height: auto;
-    }
   }
 
-  .noScroll {
+  .noscroll {
     position: fixed;
     overflow: hidden;
   }
 
   // On Page Messages
-  .onPageMessage {
+  .onpagemessage {
     @include border-radius(2px);
     width: 100%;
     padding: 0.5em;
@@ -278,25 +273,30 @@ Breakdown:
   // Pads & Margins
   .pad { padding: 10px; }
   .pad5 { padding: 5px; }
-  .padRight { padding-right: 15px; }
-  .padBottom { padding-bottom: 10px; }
-  .padBottom15 { padding-bottom: 15px; }
+  .padright { padding-right: 15px; }
+  .padbottom { padding-bottom: 10px; }
+  .padbottom15 { padding-bottom: 15px; }
 
   .margin { margin: 10px; }
-  .marginRight { margin-right: 10px; }
-  .marginBottom { margin-bottom: 10px; }
-  .marginBottom15 { margin-bottom: 15px; }
+  .marginright { margin-right: 10px; }
+  .marginbottom { margin-bottom: 10px; }
+  .marginbottom15 { margin-bottom: 15px; }
 
   // Positions
-  .stickToBottom {
+  .sticktobottom {
     position: fixed;
     bottom: 0;
     z-index: 9;
     width: 100%;
   }
 
-  .floatLeft { float: left; }
-  .floatRight { float: right; }
+  // Overflow
+  .overflowhidden {
+    overflow: hidden;
+  }
+
+  .floatleft { float: left; }
+  .floatright { float: right; }
 
   // Shapes
   .circle {

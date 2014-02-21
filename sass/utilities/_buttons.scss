@@ -9,9 +9,10 @@ button, .button {
         color: $white !important; 
         cursor: pointer; 
         display: inline-block;  
-        font: bold 1rem $basefont;
+        font: normal 1rem $basefont;
         text-align: center; 
         text-decoration: none; 
+        text-transform: uppercase;
 
         &:hover, &:focus {
             text-decoration: none;
@@ -22,7 +23,7 @@ button, .button {
         &.xlarge { font-size: 20px; padding: 17px 26px; }
         &.large { font-size: 17px; padding: 15px 30px 16px; }
         &.medium { font-size: 16px; }
-        &.small { font-size: 13px; padding: 7px 14px 8px; }
+        &.small { font-size: 11px; padding: 7px 14px 8px; letter-spacing: 1px; }
         &.expand { width: 100%; text-align: center; }
 
         // Colors
@@ -96,6 +97,11 @@ button, .button {
             background: $platinum !important;
             box-shadow: none; 
         }
+    }
+
+    // Pill
+    .pill {
+        @include border-radius(50px);
     }
 
     // Button Group
