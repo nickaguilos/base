@@ -6,101 +6,101 @@ for additional classes that control the visuals of html elements,
 and aren't big enough to warrant their own partial. 
 
 Breakdown:
-    - Anchors
-    - Sticky Head
-    - Horizontal Rules
-    - Containers
-    - Tables
-    - Lists
-    - Navigation
-    - Toggles
-    - Visibility
-    - Overlays
-    - On Page Messages
-    - Verified Mark
-    - Pads and Margins
-    - Positions
-    - Shapes
-    - Border Radius
+	- Anchors
+	- Sticky Head
+	- Horizontal Rules
+	- Containers
+	- Tables
+	- Lists
+	- Navigation
+	- Toggles
+	- Visibility
+	- Overlays
+	- On Page Messages
+	- Verified Mark
+	- Pads and Margins
+	- Positions
+	- Shapes
+	- Border Radius
 */
 
 // Anchors
-  a {
-    &.blocklink {
-      color: $copycolor;
-      text-decoration: none;
-    }
-  }
+a {
+	&.blocklink {
+		color: $copycolor;
+		text-decoration: none;
+	}
+}
 
 
 // Sticky Head
 .stickyHead {
-  position: fixed;
-  z-index: 14; 
-  top: 0;
-  left: 0;
-  width: 100%;
+	position: fixed;
+	z-index: 14; 
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .stickyHeadWrap {
-  height: $stickyheadheight;
+	height: $stickyheadheight;
 }
 
 // Horizontal Rules
 
-    hr {
-      background: $border; 
-      clear: both; 
-      float: none; 
-      width: 100%; 
-      height: 1px;
-      margin: 3em 0;
-      border: none; 
+hr {
+	background: $border; 
+	clear: both; 
+	float: none; 
+	width: 100%; 
+	height: 1px;
+	margin: 3em 0;
+	border: none; 
 
-      &.minimalmargin {
-        margin: 0.3125em 0;
-      }
+	&.minimalmargin {
+		margin: 0.3125em 0;
+	}
 
-      &.narrow {
-        width: 8em;
-        background: $border;
-      }
+	&.narrow {
+		width: 8em;
+		background: $border;
+	}
 
-      &.center {
-        margin-left: auto;
-        margin-right: auto;
-      }
+	  &.center {
+		margin-left: auto;
+		margin-right: auto;
+	  }
 
-      &.white {
-        background: $white;
-      }
-    }
+	  &.white {
+		background: $white;
+	  }
+	}
 
-    .textDivider {
-      margin: 3em 0;
-        h6 {
-          background-color: $black;
-          color: $white;
-          margin: 0;
-          padding: 10px;
-          display: inline-block;
-          position: relative;
-          top: -30px;
-          text-transform: uppercase;
-          font-size: 1em;
+	.textDivider {
+	  margin: 3em 0;
+		h6 {
+		  background-color: $black;
+		  color: $white;
+		  margin: 0;
+		  padding: 10px;
+		  display: inline-block;
+		  position: relative;
+		  top: -30px;
+		  text-transform: uppercase;
+		  font-size: 1em;
 
-          &.big {
-            font-size: 2.5em;
-          }
-        }
+		  &.big {
+			font-size: 2.5em;
+		  }
+		}
 
-        &.white {
-          h6 { 
-            background-color: $white; 
-            color: $darkgray;
-          }
-        }
-    }
+		&.white {
+		  h6 { 
+			background-color: $white; 
+			color: $darkgray;
+		  }
+		}
+	}
 
 
 // Containers 
@@ -109,165 +109,165 @@ Breakdown:
 // Tables 
   
   table {
-    tr {
-      border-bottom: 1px solid $platinum;
-    }
+	tr {
+	  border-bottom: 1px solid $platinum;
+	}
 
-    &.zebra {
-      tr:nth-child(odd) {
-        border: none;
-      }
-      tr:last-child {
-        border: none;
-      }
-    }
+	&.zebra {
+	  tr:nth-child(odd) {
+		border: none;
+	  }
+	  tr:last-child {
+		border: none;
+	  }
+	}
   }
 
 // Lists 
   ul, ol {
-    &.nopad { padding-left: 0; }
+	&.nopad { padding-left: 0; }
 
-    &.nostyle {
-      list-style-type: none;
-    }
+	&.nostyle {
+	  list-style-type: none;
+	}
 
-    &.bordered {
-      li { border-bottom: 1px solid $grayhighlight; }
-    }
+	&.bordered {
+	  li { border-bottom: 1px solid $grayhighlight; }
+	}
   }
 
 // Navigation
-    nav {
-        &.accordion {
-          & > div {
-            border-bottom: 1px solid $grayhighlight;
+	nav {
+		&.accordion {
+		  & > div {
+			border-bottom: 1px solid $grayhighlight;
 
-            &:last-child {
-              border-bottom: none;
-            }
+			&:last-child {
+			  border-bottom: none;
+			}
 
-            & > a {
-              display: block;
-              padding: 0.75em;
-              background-color: $white;
-              color: $copycolor;
-              font-size: 0.875em;
-              font-weight: bold;
-          }
+			& > a {
+			  display: block;
+			  padding: 0.75em;
+			  background-color: $white;
+			  color: $copycolor;
+			  font-size: 0.875em;
+			  font-weight: bold;
+		  }
 
-            [class*="icon-"] {
-              float: right;
-              margin-top: 3px;
-              color: $ash;
-            }
+			[class*="icon-"] {
+			  float: right;
+			  margin-top: 3px;
+			  color: $ash;
+			}
 
-            .toggle {
-              display: none;
-              background-color: #fafafa;
-              //padding: 1.2em 0.875em; 
-              border-bottom: 1px solid $lightgray;
-            }
-          }
-        }
+			.toggle {
+			  display: none;
+			  background-color: #fafafa;
+			  //padding: 1.2em 0.875em; 
+			  border-bottom: 1px solid $lightgray;
+			}
+		  }
+		}
 
-        &.siteNav {
-          a {
-            display: block;
-            padding: 0.625em 1.25em;
-            border-bottom: 1px solid $platinum;
-            color: $darkblue;
-            opacity: 0.9;
+		&.siteNav {
+		  a {
+			display: block;
+			padding: 0.625em 1.25em;
+			border-bottom: 1px solid $platinum;
+			color: $darkblue;
+			opacity: 0.9;
 
-            span {
-              float: right;
-            }
-          }
+			span {
+			  float: right;
+			}
+		  }
 
-          a:last-child {
-            padding-bottom: 1em;
-          }
+		  a:last-child {
+			padding-bottom: 1em;
+		  }
 
-          .copyright {
-            color: $ash;
-            font-weight: bold;
-            line-height: 1em;
-            padding-left: 1.25em;
-          }
-        }
-    }
+		  .copyright {
+			color: $ash;
+			font-weight: bold;
+			line-height: 1em;
+			padding-left: 1.25em;
+		  }
+		}
+	}
 
   // Toggles
   .toggler {
-    [class*="icon-"] {
-      position: relative;
-      top: 1px;
-      display: inline-block;
-      @include transition(all, 0.2s);
+	[class*="icon-"] {
+	  position: relative;
+	  top: 1px;
+	  display: inline-block;
+	  @include transition(all, 0.2s);
 
-      &.rotated {
-        -webkit-transform: rotate(180deg);
-      }
-    }
+	  &.rotated {
+		-webkit-transform: rotate(180deg);
+	  }
+	}
   } 
 
   // Visibility
   .hidden {
-    display: none;
+	display: none;
   }
 
   // Overlays
   .overlay {
-    overflow-y: scroll;
-    padding: 60px 10px 10px 10px;
-    background-color: rgba(3, 50, 77, 0.8);
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
+	overflow-y: scroll;
+	padding: 60px 10px 10px 10px;
+	background-color: rgba(3, 50, 77, 0.8);
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
 
-    &.modal {
-      position: absolute;
-    }
+	&.modal {
+	  position: absolute;
+	}
   }
 
   .noscroll {
-    position: fixed;
-    overflow: hidden;
+	position: fixed;
+	overflow: hidden;
   }
 
   // On Page Messages
   .onpagemessage {
-    @include border-radius(2px);
-    width: 100%;
-    padding: 0.5em;
-    margin: 0.5em 0;
-    font-weight: bold;
-    font-size: 0.75em; //12px
-    color: $white;
+	@include border-radius(2px);
+	width: 100%;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	font-weight: bold;
+	font-size: 0.75em; //12px
+	color: $white;
 
-    &.error {
-      background-color: #bd4e44;
-    }
+	&.error {
+	  background-color: #bd4e44;
+	}
   }
 
   // Verified Mark
   .verified {
-    color: $darkgray;
-    font-size: 0.625em;
+	color: $darkgray;
+	font-size: 0.625em;
   }
 
   // Preloader
   .preloader {
-    @include border-radius(2px);
-    padding: 0.3125em; //5px;
-    border: 1px dotted #ddd;
-    width: 100%;
-    height: 50px;
-    background: url('/images/design/mobile/preloader.gif') center center no-repeat transparent;
-    background-size: 30px auto;
+	@include border-radius(2px);
+	padding: 0.3125em; //5px;
+	border: 1px dotted #ddd;
+	width: 100%;
+	height: 50px;
+	background: url('/images/design/mobile/preloader.gif') center center no-repeat transparent;
+	background-size: 30px auto;
   }
 
   // Pads & Margins
@@ -284,15 +284,15 @@ Breakdown:
 
   // Positions
   .sticktobottom {
-    position: fixed;
-    bottom: 0;
-    z-index: 9;
-    width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
+	width: 100%;
   }
 
   // Overflow
   .overflowhidden {
-    overflow: hidden;
+	overflow: hidden;
   }
 
   .floatleft { float: left; }
@@ -300,16 +300,16 @@ Breakdown:
 
   // Shapes
   .circle {
-    @include border-radius(100px);
+	@include border-radius(100px);
   }
 
   // Border Radius
   @mixin borderradius(){
-    @if $setborderradius == "true" {
-      @include border-radius($radii);
-    }
+	@if $setborderradius == "true" {
+	  @include border-radius($radii);
+	}
 
-    @else {
-      @include border-radius(0);
-    }
+	@else {
+	  @include border-radius(0);
+	}
   }
